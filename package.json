@@ -1,0 +1,22 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "A node js page that generates an HTML page for Team of engineer and intern",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BABATEES/Team-profile-generator.git"
+  },
+  "author": "Oluwatayo Hassan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BABATEES/Team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/BABATEES/Team-profile-generator#readme"
+}
