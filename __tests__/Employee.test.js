@@ -1,48 +1,25 @@
 const Employee = require("../lib/Employee");
 
-test("Can instantiate Employee instance", () => {
-  const e = new Employee();
-  expect(typeof(e)).toBe("object");
+const employee = new Employee('Tayo', '2410', 'tayohas@gmail.com');
+
+test('can get the constructor values for the employee object', () => {
+    expect(employee.name).toBe('Tayo');
+    expect(employee.id).toBe('2410');
+    expect(employee.email).toBe('tayohas@gmail.com');
 });
 
-test("Can set name via constructor arguments", () => {
-  const name = "Alice";
-  const e = new Employee(name);
-  expect(e.name).toBe(name);
+test('can get the name from the getName() method', () => {
+    expect(employee.getName()).toBe('Tayo');
 });
 
-test("Can set id via constructor argument", () => {
-  const testValue = 100;
-  const e = new Employee("Foo", testValue);
-  expect(e.id).toBe(testValue);
+test('can get the id from the getId() method', () => {
+    expect(employee.getId()).toBe('2410');
 });
 
-test("Can set email via constructor argument", () => {
-  const testValue = "test@test.com";
-  const e = new Employee("Foo", 1, testValue);
-  expect(e.email).toBe(testValue);
+test('can get the email from the getEmail() method', () => {
+    expect(employee.getEmail()).toBe('tayohas@gmail.com');
 });
 
-test("Can get name via getName()", () => {
-  const testValue = "Alice";
-  const e = new Employee(testValue);
-  expect(e.getName()).toBe(testValue);
-});
-
-test("Can get id via getId()", () => {
-  const testValue = 100;
-  const e = new Employee("Foo", testValue);
-  expect(e.getId()).toBe(testValue);
-});
-
-test("Can get email via getEmail()", () => {
-  const testValue = "test@test.com";
-  const e = new Employee("Foo", 1, testValue);
-  expect(e.getEmail()).toBe(testValue);
-});
-
-test("getRole() should return \"Employee\"", () => {
-  const testValue = "Employee";
-  const e = new Employee("Alice", 1, "test@test.com");
-  expect(e.getRole()).toBe(testValue);
+test('can get the role from the getRole() method', () => {
+    expect(employee.getRole()).toBe('Employee');
 });
