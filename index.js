@@ -21,25 +21,25 @@ const promptManager = () => {
         {
             type: 'input',
             name: 'name',
-            message: 'What is your name? (Required)',
+            message: 'What is your Manager name? (Required)',
             
         },
         {
             type: 'input',
             name: 'employeeId',
-            message: 'Enter your employee ID (Required)',
+            message: 'Enter your manager employee ID (Required)',
             
         },
         {
             type: 'input',
             name: 'email',
-            message: 'Enter your email address (Required)',
+            message: 'Enter your manager email address (Required)',
             
         },
         {
             type: 'input',
             name: 'officeNumber',
-            message: 'Enter your office number (Required)',
+            message: 'Enter your manager office number (Required)',
             
         },
     ]).then(response => {
@@ -83,25 +83,25 @@ const promptEngineer = () => {
         {
             type: 'input',
             name: 'name',
-            message: 'What is the name of engineer? (Required)',
+            message: 'What is the name of your engineer? (Required)',
             
         },
         {
             type: 'input',
             name: 'employeeId',
-            message: 'Enter your employee ID (Required)',
+            message: 'Enter your engineer employee ID (Required)',
             
         },
         {
             type: 'input',
             name: 'email',
-            message: 'Enter your email address (Required)',
+            message: 'Enter your engineer email address (Required)',
             
         },
         {
             type: 'input',
             name: 'githubUsername',
-            message: 'Enter your Github username. (Required)',
+            message: 'Enter your engineer Github username. (Required)',
             
         }
     ]).then(response => {
@@ -123,25 +123,25 @@ const promptIntern = () => {
         {
             type: 'input',
             name: 'name',
-            message: 'What is the name of the intern? (Required)',
+            message: 'What is the name of your intern? (Required)',
             
         },
         {
             type: 'input',
             name: 'employeeId',
-            message: 'Enter your employee ID (Required)',
+            message: 'Enter your intern employee ID (Required)',
             
         },
         {
             type: 'input',
             name: 'email',
-            message: 'Enter your email address (Required)',
+            message: 'Enter your intern email address (Required)',
             
         },
         {
             type: 'input',
             name: 'school',
-            message: 'Enter your school name. (Required)',
+            message: 'Enter your intern school name. (Required)',
            
         }
     ]).then(response => {
