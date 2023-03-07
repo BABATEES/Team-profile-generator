@@ -56,7 +56,7 @@ const promptMenu = () => {
             type: 'list',
             name: 'menu',
             message: 'Please select role you would like to add:',
-            choices: ['add an engineer', 'add an intern', 'Done with my Team']
+            choices: ['add an engineer', 'add an intern', 'finished building the Team']
         }])
         .then(userChoice => {
             switch (userChoice.menu) {
